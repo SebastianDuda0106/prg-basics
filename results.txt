@@ -1,5 +1,5 @@
 test_p1 (__main__.Test.test_p1) ... ok
-test_p10 (__main__.Test.test_p10) ... ok
+test_p10 (__main__.Test.test_p10) ... FAIL
 test_p2 (__main__.Test.test_p2) ... ok
 test_p3 (__main__.Test.test_p3) ... ok
 test_p4 (__main__.Test.test_p4) ... ok
@@ -9,7 +9,20 @@ test_p7 (__main__.Test.test_p7) ... ok
 test_p8 (__main__.Test.test_p8) ... ok
 test_p9 (__main__.Test.test_p9) ... ok
 
+======================================================================
+FAIL: test_p10 (__main__.Test.test_p10)
 ----------------------------------------------------------------------
-Ran 10 tests in 0.007s
+Traceback (most recent call last):
+  File "c:/Users/sebas/Desktop/prg-basics/06-Test1/testpersonal/grade-test1-ZIISS1-1111.py", line 66, in test_p10
+    self.assertEqual(p10.f("13:06","1:06pm"),"13:06")
+AssertionError: '1:06pm' != '13:06'
+- 1:06pm
+?     --
++ 13:06
+?  +
 
-OK
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.050s
+
+FAILED (failures=1)
