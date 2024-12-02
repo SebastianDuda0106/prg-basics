@@ -5,8 +5,6 @@ def f(darr):
         for j in range(len(darr[i])):
             rowval+=darr[i][j]
             colval+=darr[j][i]
-        print(rowval)
-        print(colval)
         if colval!=rowval:
             return False
     return True
